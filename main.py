@@ -46,7 +46,7 @@ def preprocess_data(_dataset):
 dataset = preprocess_data(dataset)
 
 # Load or generate embeddings
-embeddings_path = "data/movie_embeddings.npz"
+embeddings_path = "Data/movie_embeddings.npz"
 if os.path.exists(embeddings_path):
     embeddings = np.load(embeddings_path)['embeddings']
 else:
